@@ -35,6 +35,12 @@ class Account{
      else {balance -= amount;
      }
    }
+
+   public void displayAccountInfo() {
+     System.out.println("Account Holder: " + name );
+     System.out.println("Balance: " + balance );
+
+   }
 }
     
 

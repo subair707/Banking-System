@@ -5,7 +5,8 @@ class Main{
         su.deposite(-1);
         System.out.println(su.displayBalance());
         su.withdraw(-20);
-        System.out.println(su.displayBalance());
+       // System.out.println(su.displayBalance());
+        su.displayAccountInfo();
 
     }
 }
