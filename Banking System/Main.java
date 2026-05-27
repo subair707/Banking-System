@@ -1,12 +1,19 @@
-class Main{
+import java.util.ArrayList;
+class Main {
+
 
     public static void main(String[] args) {
-        Account su = new Account("Subair", 200.00);
-        su.deposite(-1);
-        System.out.println(su.displayBalance());
-        su.withdraw(-20);
-       // System.out.println(su.displayBalance());
-        su.displayAccountInfo();
+        ArrayList<Account> accounts = new ArrayList<>();
+
+
+        Account su = new Account("Subair", 300.00);
+        Account ab = new Account("Soonup", 30000.00);
+        accounts.add(su);
+        accounts.add(ab);
+        accounts.get(0).displayAccountInfo();
+        accounts.get(1).displayAccountInfo();
+
+
 
     }
 }
